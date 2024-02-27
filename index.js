@@ -1,3 +1,6 @@
+//ESERCIZIO 1
+
+//controlla se in local è presente usr
 const check = function () {
   if (localStorage.getItem("usr")) {
     txt = "Ciao, " + localStorage.getItem("usr");
@@ -6,13 +9,13 @@ const check = function () {
   }
   document.querySelector(".title").innerHTML = txt;
 };
-
+//salva il valore
 const save = function () {
   let usr = document.getElementById("usr").value;
   localStorage.setItem("usr", user);
   check();
 };
-
+//rimuove il valore
 const deleteData = function () {
   localStorage.removeItem("usr");
   check();
