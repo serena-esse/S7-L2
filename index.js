@@ -12,7 +12,7 @@ const check = function () {
 //salva il valore
 const save = function () {
   let usr = document.getElementById("usr").value;
-  localStorage.setItem("usr", user);
+  localStorage.setItem("usr", usr);
   check();
 };
 //rimuove il valore
